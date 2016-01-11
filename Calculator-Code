@@ -2,6 +2,7 @@
 //This is the code I used to compile together the docking calculator, straight from the .vb file
 //Note that this was during my early days of coding so there are obviously errors that may need to be fixed which I never got around to
 //coding starts after this line
+//This was compiled using Microsoft Visual Studio 2012
 
 Public Class Form1
     Private Sub superCalculateButton_Click(sender As Object, e As EventArgs) Handles superCalculateButton.Click
