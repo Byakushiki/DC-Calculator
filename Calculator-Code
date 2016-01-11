@@ -1,0 +1,187 @@
+# DC-Calculator
+//This is the code I used to compile together the docking calculator, straight from the .vb file
+//Note that this was during my early days of coding so there are obviously errors that may need to be fixed which I never got around to
+//coding starts after this line
+
+Public Class Form1
+    Private Sub superCalculateButton_Click(sender As Object, e As EventArgs) Handles superCalculateButton.Click
+        Dim superDockAInteger, superDockBInteger, superDockCInteger, superDockDInteger, superDockEInteger, _
+            superDockFInteger, superDockGInteger, superDockHInteger, superDockIInteger, superDockJInteger As Integer
+        Dim pointsInteger, calculatedSuperPointsInteger, dockLetterPointInteger, tempInteger As Integer
+        Dim superComboBoxText As String
+
+        superDockAInteger = 5
+        superDockBInteger = 10
+        superDockCInteger = 15
+        superDockDInteger = 20
+        superDockEInteger = 25
+        superDockFInteger = 30
+        superDockGInteger = 34
+        superDockHInteger = 39
+        superDockIInteger = 44
+        superDockJInteger = 49
+
+        Integer.TryParse(superTextBox.Text, tempInteger)
+
+
+        If superComboBox.Text = "A" Then
+            dockLetterPointInteger = superDockAInteger
+        ElseIf superComboBox.Text = "B" Then
+            dockLetterPointInteger = superDockBInteger
+        ElseIf superComboBox.Text = "C" Then
+            dockLetterPointInteger = superDockCInteger
+        ElseIf superComboBox.Text = "D" Then
+            dockLetterPointInteger = superDockDInteger
+        ElseIf superComboBox.Text = "E" Then
+            dockLetterPointInteger = superDockEInteger
+        ElseIf superComboBox.Text = "F" Then
+            dockLetterPointInteger = superDockFInteger
+        ElseIf superComboBox.Text = "G" Then
+            dockLetterPointInteger = superDockGInteger
+        ElseIf superComboBox.Text = "H" Then
+            dockLetterPointInteger = superDockHInteger
+        ElseIf superComboBox.Text = "I" Then
+            dockLetterPointInteger = superDockIInteger
+        Else
+            dockLetterPointInteger = superDockJInteger
+        End If
+
+        SuperDocksInputLabel.Text = superComboBox.Text.ToString + tempInteger.ToString
+
+        calculatedSuperPointsInteger = dockLetterPointInteger + tempInteger
+
+        superLabelBox.Text = calculatedSuperPointsInteger
+
+
+
+    End Sub
+
+    Private Sub hyperCalculateButton_Click(sender As Object, e As EventArgs) Handles hyperCalculateButton.Click
+        Dim hyperDockAInteger, hyperDockBInteger, hyperDockCInteger, hyperDockDInteger, hyperDockEInteger, _
+hyperDockFInteger, hyperDockGInteger, hyperDockHInteger, hyperDockIInteger, hyperDockJInteger, _
+HyperDockKInteger, hyperDockLInteger, hyperDockMInteger, hyperDockNInteger, hyperDockOInteger As Integer
+        Dim hyperPointsInteger, calculatedHyperPointsInteger, dockLetterPointsInteger, tempInteger As Integer
+
+        hyperDockAInteger = 3
+        hyperDockBInteger = 6
+        hyperDockCInteger = 9
+        hyperDockDInteger = 13
+        hyperDockEInteger = 16
+        hyperDockFInteger = 19
+        hyperDockGInteger = 22
+        hyperDockHInteger = 25
+        hyperDockIInteger = 28
+        hyperDockJInteger = 31
+        HyperDockKInteger = 35
+        hyperDockLInteger = 38
+        hyperDockMInteger = 40
+        hyperDockNInteger = 41
+        hyperDockOInteger = 44
+
+        Integer.TryParse(hyperTextBox.Text, tempInteger)
+
+        If hyperComboBox.Text = "A" Then
+            dockLetterPointsInteger = hyperDockAInteger
+        ElseIf hyperComboBox.Text = "B" Then
+            dockLetterPointsInteger = hyperDockBInteger
+        ElseIf hyperComboBox.Text = "C" Then
+            dockLetterPointsInteger = hyperDockCInteger
+        ElseIf hyperComboBox.Text = "D" Then
+            dockLetterPointsInteger = hyperDockDInteger
+        ElseIf hyperComboBox.Text = "E" Then
+            dockLetterPointsInteger = hyperDockEInteger
+        ElseIf hyperComboBox.Text = "F" Then
+            dockLetterPointsInteger = hyperDockFInteger
+        ElseIf hyperComboBox.Text = "G" Then
+            dockLetterPointsInteger = hyperDockGInteger
+        ElseIf hyperComboBox.Text = "H" Then
+            dockLetterPointsInteger = hyperDockHInteger
+        ElseIf hyperComboBox.Text = "I" Then
+            dockLetterPointsInteger = hyperDockIInteger
+        ElseIf hyperComboBox.Text = "J" Then
+            dockLetterPointsInteger = hyperDockJInteger
+        ElseIf hyperComboBox.Text = "K" Then
+            dockLetterPointsInteger = HyperDockKInteger
+        ElseIf hyperComboBox.Text = "L" Then
+            dockLetterPointsInteger = hyperDockLInteger
+        ElseIf hyperComboBox.Text = "M" Then
+            dockLetterPointsInteger = hyperDockMInteger
+        ElseIf hyperComboBox.Text = "O" Then
+            dockLetterPointsInteger = hyperDockOInteger
+        Else
+            dockLetterPointsInteger = hyperDockNInteger
+        End If
+
+        calculatedHyperPointsInteger = dockLetterPointsInteger + tempInteger
+
+        hyperLabelBox.Text = calculatedHyperPointsInteger
+    End Sub
+
+    Private Sub ultraCalculateButton_Click(sender As Object, e As EventArgs) Handles ultraCalculateButton.Click
+        Dim ultraDockAInteger, ultraDockBInteger, ultraDockCInteger, ultraDockDInteger, ultraDockEInteger, _
+            ultraDockFInteger, ultraDockGInteger, ultraDockHInteger, ultraDockIInteger, ultraDockJInteger, _
+            ultraDockKInteger, ultraDockLInteger, ultraDockMInteger, ultraDockNInteger, ultraDockOInteger As Integer
+        Dim calculatedUltraPointsIneteger, dockLetterPointsInteger, tempInteger As Integer
+
+        ultraDockAInteger = 5
+        ultraDockBInteger = 11
+        ultraDockCInteger = 17
+        ultraDockDInteger = 23
+        ultraDockEInteger = 29
+        ultraDockFInteger = 35
+        ultraDockGInteger = 41
+        ultraDockHInteger = 47
+        ultraDockIInteger = 53
+        ultraDockJInteger = 59
+        ultraDockKInteger = 65
+        ultraDockLInteger = 69
+        ultraDockMInteger = 74
+        ultraDockNInteger = 76
+        ultraDockOInteger = 82
+
+
+        Integer.TryParse(ultraTextBox.Text, tempInteger)
+
+        If ultraComboBox.Text = "A" Then
+            dockLetterPointsInteger = ultraDockAInteger
+        ElseIf ultraComboBox.Text = "B" Then
+            dockLetterPointsInteger = ultraDockBInteger
+        ElseIf ultraComboBox.Text = "C" Then
+            dockLetterPointsInteger = ultraDockCInteger
+        ElseIf ultraComboBox.Text = "D" Then
+            dockLetterPointsInteger = ultraDockDInteger
+        ElseIf ultraComboBox.Text = "E" Then
+            dockLetterPointsInteger = ultraDockEInteger
+        ElseIf ultraComboBox.Text = "F" Then
+            dockLetterPointsInteger = ultradockFInteger
+        ElseIf ultraComboBox.Text = "G" Then
+            dockLetterPointsInteger = ultraDockGInteger
+        ElseIf ultraComboBox.Text = "H" Then
+            dockLetterPointsInteger = ultraDockHInteger
+        ElseIf ultraComboBox.Text = "I" Then
+            dockLetterPointsInteger = ultraDockIInteger
+        ElseIf ultraComboBox.Text = "J" Then
+            dockLetterPointsInteger = ultraDockJInteger
+        ElseIf ultraComboBox.Text = "K" Then
+            dockLetterPointsInteger = ultraDockKInteger
+        ElseIf ultraComboBox.Text = "L" Then
+            dockLetterPointsInteger = ultraDockLInteger
+        ElseIf ultraComboBox.Text = "M" Then
+            dockLetterPointsInteger = ultraDockMInteger
+        ElseIf ultraComboBox.Text = "N" Then
+            dockLetterPointsInteger = ultraDockNInteger
+        Else
+            dockLetterPointsInteger = ultraDockOInteger
+        End If
+
+        calculatedUltraPointsIneteger = dockLetterPointsInteger + tempInteger
+
+        ultraLabelBox.Text = calculatedUltraPointsIneteger
+
+    End Sub
+
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        End
+    End Sub
+End Class
